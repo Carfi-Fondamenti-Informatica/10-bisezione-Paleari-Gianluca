@@ -3,7 +3,7 @@
 using namespace std;
 
 float f(float y){
-    return y*y-cos(y)+1;
+    return (y*y)*cos(y)+1;
 }
 int main() {
     cout<<"inserire estremi ";
