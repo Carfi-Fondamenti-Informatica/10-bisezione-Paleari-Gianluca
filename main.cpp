@@ -8,7 +8,7 @@ double f(float y){
     return a;
 }
 int main() {
-    double a=0, b=0,m=0,err=1;
+    double a=0, b=0,x=0,err=1;
 
     while ((f(a) * f(b)) >= 0) {
         cout << "inserire estremi " << endl;
@@ -17,16 +17,16 @@ int main() {
 
 
 
-    while(f(m)!=0){
+    while(f(x)!=0){
 
-         m=(a+b)/2;
-        if(f(m)*f(b)<0)
+         x=(a+b)/2;
+        if(f(x)*f(b)<0)
         {
-            a=m;
+            a=x;
 
         }
         else {
-            b = m;
+            b = x;
         }
         err=abs((b-a)/2);
         if(err<(1e-6)) {
@@ -34,10 +34,10 @@ int main() {
         }
 
     }
-    m=m*10000;
-    m=(int)m;
-    m=m/10000;
-    cout<<m;
+    x=x*10000
+    x=(int)x;
+    x=x/10000;
+    cout<<x;
 
 
 
