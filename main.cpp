@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-double f(float y){
+double f(double y){
     double a=0
     a=(y*y)*cos(y)+1;
     return a;
