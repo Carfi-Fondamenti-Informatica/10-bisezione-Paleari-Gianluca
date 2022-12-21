@@ -22,7 +22,7 @@ int main() {
         }else{
             b=m;
         }
-        err= abs((b-a)/2);
+        err=((b-a)/2);
         if (err<(1e-6)){
             break;
         }
