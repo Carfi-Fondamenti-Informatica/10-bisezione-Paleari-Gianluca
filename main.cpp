@@ -6,9 +6,12 @@ float f(float y){
     return (y*y)*cos(y)+1;
 }
 int main() {
-    cout<<"inserire estremi ";
     float a,b;
-    cin >> a>> b;
+    cout<<"inserire estremo ";
+    cin >> a;
+    cout<<"inserire estremo ";
+    cin >> b;
+   
     while((b-a)/2>0.0001)
     {
         float m=(a+b)/2;
