@@ -2,11 +2,13 @@
 #include <cmath>
 using namespace std;
 
-float f(float y){
-    return (y*y)*cos(y)+1;
+double f(float y){
+    double a=0
+    a=(y*y)*cos(y)+1;
+    return a;
 }
 int main() {
-    float a, b,m,err;
+    double a, b,m,err=1;
 
     while ((f(a) * f(b)) >= 0) {
         cout << "inserire estremi " << endl;
